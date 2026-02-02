@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop - TechHaven</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact us</a>
+    </div>
+
+    <div class="logo">TechHaven</div>
+</nav>
+
+<div class="shop-container">
+
+    <div class="sidebar">
+
+        <h3>Categories</h3>
+        <ul>
+            <li onclick="filterCategory('all')">All</li>
+            <li onclick="filterCategory('headphones')">Headphones</li>
+            <li onclick="filterCategory('speakers')">Speakers</li>
+            <li onclick="filterCategory('accessories')">Accessories</li>
+        </ul>
+
+        <h3>Price</h3>
+        <ul>
+            <li onclick="filterPrice('low')">Under ₹2000</li>
+            <li onclick="filterPrice('mid')">₹2000 - ₹5000</li>
+            <li onclick="filterPrice('high')">Above ₹5000</li>
+        </ul>
+
+    </div>
+    
+    <div class="products">
+
+        <div class="product" data-category="headphones" data-price="high">
+            <img src="photos/headphone.webp" alt="product">
+            <p>Gaming Headphone</p>
+            <span>₹6500</span>
+        </div>
+
+        <div class="product" data-category="speakers" data-price="mid">
+            <img src="photos/bluetoothSpeaker.webp" alt="product">
+            <p>Bluetooth Speaker</p>
+            <span>₹3500</span>
+        </div>
+
+        <div class="product" data-category="accessories" data-price="low">
+            <img src="photos/audioCable.webp" alt="product">
+            <p>Audio Cable</p>
+            <span>₹500</span>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="shop.js"></script>
+</body>
+</html>
